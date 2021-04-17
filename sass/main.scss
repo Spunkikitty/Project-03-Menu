@@ -1,0 +1,184 @@
+* { 
+  margin:0px;
+  padding:0px;
+}
+
+@media only screen and (max-width: 768px) {
+  
+
+
+  .css-selector {
+    font-family: "Shrikhand", auto;
+    border: 3px solid black;
+    font-family: "Roboto",auto;
+  }
+
+
+
+  nav{ 
+  padding-top:15px;
+  padding-bottom: 10px;
+  border: 1px solid black;
+  width:100%;
+
+}
+  .logo-top {
+    display:block;
+    margin:0 auto; 
+    height:30px;
+}
+
+.paris-container {
+  
+  border: 3px solid black;
+  width:100%;
+}
+
+.paris-top{ 
+  border:1px solid black; 
+  background-color: #ccc;
+  padding-left:35%;
+  padding-top:15px; 
+  padding-bottom:10px;
+}
+
+    .fa-map-marker-alt{ 
+      display: block;
+      align-content:stretch;
+      color: #3F3F3F;
+}
+
+
+.like-1 {  
+  font-family: "Roboto";
+  border: 3px solid black;
+  line-height: 2.5em;
+  padding-top:20px;
+  font-weight:900;
+  width:100%;
+  text-align:center;
+
+}
+  .cover-1{
+border: 3px solid black;
+font-family: "Roboto";
+padding:5% 5% 5% 5%;
+text-align: center;
+color:#5D5D5D;
+font-weight: lighter;
+
+} 
+
+
+.btn-1 {
+ background: linear-gradient(to bottom,
+    #FF79DA, #9356DC);
+  border-radius: 45px;
+  border: 2px solid #f2f2f2;
+  padding:1.5em 1.5em 1.5em 1.5em;
+  margin: 10px 5% 12% 18%;
+  min-width: 100px;
+}
+      .our-1 { 
+          font-family:"Roboto";
+          color: #f2f2f2;
+    }
+  
+  
+
+.how-it-works{
+  border: 3px solid black;
+  margin-top: 20px;
+  font-family: "Roboto";
+  
+}
+
+.btn-2, .btn-4 { 
+  margin-top: 40px;
+  background-color: #E6E6E6;
+  border-radius: 25px;
+  border: 2px solid #c2b7b7;
+  padding:1.5em 1.5em 1.5em 1.5em;
+  margin-left: 1em ;
+  width: 75%;
+}
+  .fa-mobile-alt,.fa-list-ul { 
+    font-family: "Roboto";
+    word-spacing: 15px;
+    padding:10px;
+  }
+
+
+.btn-3  {
+  margin-top:40px;
+  background-color: #F2F2F2;
+  border-radius: 25px;
+  border: 2px solid #f2f2f2;
+  padding:1.5em 1.5em 1.5em 1.5em;
+  margin-left: 1em ;
+  width: 75%; 
+}
+
+
+
+
+.btn-4 {
+  background-color: #F2F2F2;
+  border-radius: 25px;
+  border: 2px solid #f2f2f2;
+  padding:1.5em 1.5em 1.5em 1.5em;
+  margin-left: 1em ;
+  width: 75%;
+
+}
+
+.fas-fa-store {
+  word-spacing: 15px;
+  color: #9356dc;
+  
+  }
+
+
+.menus {
+  border: 3px solid black;
+  width:375px; 
+  height:400px; 
+  margin-top: 20px;
+
+  }
+
+.restaurant-1 { 
+  background-color:#F2F2F2;
+  border-radius: 30px;
+  padding: 15px;
+  width: 62%;
+  height: 50%;
+  margin: 10px;
+
+}
+
+  .full-1{
+    width:85%;
+    height:75%;
+    border-radius:5%;
+    margin-left:20px;
+  }
+
+  .btn-5 { 
+    background-color: green;
+  border-radius: 25px;
+  border: 12px solid black;
+  padding:1.5em 1.5em 1.5em 1.5em;
+  margin-left: 1em ;
+  width: 75%;
+  }
+
+.logo-end{ 
+  border: 3px solid black;
+  width: 375px;
+  height:400px;
+  margin-top: 20px; 
+
+}
+
+}

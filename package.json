@@ -1,0 +1,11 @@
+{
+  "name": "project-3-menu",
+  "version": "1.0.0",
+  "description": "openclassroom",
+  "main": "index.js",
+  "scripts": { 
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "author": "EbonyJackson",
+  "license": "ISC"
+}
