@@ -178,10 +178,12 @@
     margin-bottom: 30px;
   }
 
+  .title-2, .location {
+    padding-left: 15px;
+  }
+
   .menu {
-    border: 1px solid black;
     width: 95%;
-    height: 200px;
     margin-bottom: 50px;
   }
 
@@ -192,35 +194,45 @@
   }
 
   .full-1 {
-    width: 99%;
-    height: 120%;
+    object-fit: cover;
+    width: 100%;
+    height: 180px;
     border-radius: 10px 10px 0 0;
     align-content: center;
-  }
-
-  .full-2 {
-    display: flex;
-    width: 250px;
-    height: 200px;
-    transform: scaleX(180deg);
-    transform: scaleY(45deg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
   }
 
   .fa-heart {
+    margin-left: 40px;
     font-weight: 100px;
-    padding-left: 10em;
     line-height: 15px;
   }
 
+  .food_card-2 {
+    object-fit: cover;
+  }
+
   .food-description {
-    border: 3px solid paleturquoise;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 7px 6px 6px #ccc;
     background-color: white;
-    width: 99%;
+    width: 100%;
     height: 55px;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 15px 15px;
   }
   .food-description .location {
     margin-top: 5px;
+  }
+  .food-description .title-left {
+    width: 70%;
+    padding-left: 10px;
+  }
+  .food-description .title-left .title-right {
+    width: 28%;
+    text-align: center;
+    padding-left: 10px;
   }
 
   .restaurant-1 {
@@ -250,6 +262,7 @@
   }
   footer ul {
     list-style: none;
+    text-decoration-style: none;
     margin: 10px 0 0 3px;
     font-family: "Roboto";
     line-height: 30px;
@@ -258,6 +271,242 @@
   .logo-end {
     font-family: "Shrikhand";
   }
+  .logo-end .email_contact {
+    text-decoration: none;
+  }
+
+  /*palette css*/
+  .css-selector {
+    font-family: "Shrikhand", auto;
+    border: 3px solid black;
+    font-family: "Roboto", auto;
+  }
+
+  .primary-img {
+    background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    display: block;
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+  }
+
+  .menu-content {
+    background-color: #ffff;
+    min-height: 1000px;
+    border: 2px solid black;
+    margin-top: -60px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+
+  .title {
+    font-family: "Shrikhand";
+    margin-right: 30px;
+  }
+
+  footer {
+    background-color: #353535;
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    color: #fff;
+  }
+  footer ul {
+    list-style: none;
+    text-decoration-style: none;
+    margin: 10px 0 0 3px;
+    font-family: "Roboto";
+    line-height: 30px;
+  }
+
+  .logo-end {
+    font-family: "Shrikhand";
+  }
+  .logo-end .email_contact {
+    text-decoration: none;
+  }
+
+  .menu-title {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+  }
+  .menu-title .left-title {
+    line-height: 20px;
+    margin-right: 50px;
+    width: 70%;
+    height: 30px;
+  }
+
+  .right-title {
+    border: 3px solid black;
+    height: 30px;
+    border: 2px solid black;
+  }
+
+  .title_food {
+    width: 70%;
+    border: 2px solid black;
+  }
+
+  .food_sides {
+    padding-left: 340px;
+  }
+
+  .menu_app1 {
+    border: 2px solid black;
+    height: 30px;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+
+  .menu_1, .menu_2, .menu_3 {
+    border: 3px solid black;
+    width: 99.2%;
+    height: 50px;
+  }
+
+  .menu_app2 {
+    border: 3px solid black;
+    height: 30px;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+
+  .menu_4, .menu_5, .menu_6 {
+    border: 3px solid black;
+    width: 99.2%;
+    height: 50px;
+  }
+
+  .menu_app3 {
+    border: 3px solid black;
+    height: 30px;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+
+  .menu_7, .menu_8, .menu_9 {
+    border: 3px solid black;
+    width: 99.2%;
+    height: 50px;
+  }
+}
+/*bastille css*/
+.css-selector {
+  font-family: "Shrikhand", auto;
+  border: 3px solid black;
+  font-family: "Roboto", auto;
+}
+
+.primary-img {
+  background-image: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+  display: block;
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+}
+
+.menu-content {
+  background-color: #ffff;
+  min-height: 1000px;
+  border: 2px solid black;
+  margin-top: -60px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.title {
+  font-family: "Shrikhand";
+  margin-right: 30px;
+}
+
+footer {
+  background-color: #353535;
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  color: #fff;
+}
+footer ul {
+  list-style: none;
+  text-decoration-style: none;
+  margin: 10px 0 0 3px;
+  font-family: "Roboto";
+  line-height: 30px;
+}
+
+.logo-end {
+  font-family: "Shrikhand";
+}
+.logo-end .email_contact {
+  text-decoration: none;
+}
+
+.menu-title {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+}
+.menu-title .left-title {
+  line-height: 20px;
+  margin-right: 50px;
+  width: 70%;
+  height: 30px;
+}
+
+.right-title {
+  border: 3px solid black;
+  height: 30px;
+  border: 2px solid black;
+}
+
+.title_food {
+  width: 70%;
+  border: 2px solid black;
+}
+
+.food_sides {
+  padding-left: 340px;
+}
+
+.menu_app1 {
+  border: 2px solid black;
+  height: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.menu_1, .menu_2, .menu_3, .menu_3b {
+  border: 3px solid black;
+  width: 99.2%;
+  height: 50px;
+}
+
+.menu_app2 {
+  border: 3px solid black;
+  height: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.menu_4, .menu_5, .menu_6 {
+  border: 3px solid black;
+  width: 99.2%;
+  height: 50px;
+}
+
+.menu_app3 {
+  border: 3px solid black;
+  height: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.menu_7, .menu_8, .menu_9 {
+  border: 3px solid black;
+  width: 99.2%;
+  height: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

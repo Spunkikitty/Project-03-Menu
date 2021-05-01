@@ -1,0 +1,51 @@
+* { 
+    margin:0px;
+    padding:0px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    
+  
+  
+    .css-selector {
+      font-family: "Shrikhand", auto;
+      border: 3px solid black;
+      font-family: "Roboto",auto;
+
+    }
+
+    .full_1{
+      border:2px solid black;
+      width:400px;
+      height:350px;
+    }
+
+    
+
+
+footer{ 
+  
+    background-color: #353535;
+    width:100%; 
+    min-height: 100px;
+    padding:10px;
+    color:#fff;
+    ul { 
+    list-style: none;
+    text-decoration-style: none;
+    margin: 10px 0 0 3px;
+    font-family:"Roboto";
+    line-height: 30px;
+    }
+  }
+  
+  .logo-end{ 
+    font-family: "Shrikhand";
+    .email_contact{ 
+      text-decoration: none;
+    }
+  
+  }
+  
+  
+  
