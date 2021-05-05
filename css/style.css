@@ -206,7 +206,6 @@
   .fa-heart {
     margin-left: 40px;
     font-weight: 100px;
-    line-height: 15px;
   }
 
   .food_card-2 {
@@ -245,12 +244,19 @@
   }
 
   .btn-5 {
-    background-color: green;
+    display: block;
+    color: white;
+    background: linear-gradient(to bottom, #FF79DA, #9356DC);
+    margin: 15px auto;
     border-radius: 25px;
-    border: 12px solid black;
     padding: 1.5em 1.5em 1.5em 1.5em;
-    margin-left: 1em;
-    width: 75%;
+    width: 45%;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .order-btn-container {
+    height: 40px;
   }
 
   footer {
@@ -291,8 +297,8 @@
   }
 
   .menu-content {
-    background-color: #ffff;
-    min-height: 1000px;
+    background-color: #f6f6f6;
+    min-height: 950px;
     border: 2px solid black;
     margin-top: -60px;
     border-top-left-radius: 30px;
@@ -301,35 +307,13 @@
 
   .title {
     font-family: "Shrikhand";
-    margin-right: 30px;
-  }
-
-  footer {
-    background-color: #353535;
-    width: 100%;
-    min-height: 100px;
-    padding: 10px;
-    color: #fff;
-  }
-  footer ul {
-    list-style: none;
-    text-decoration-style: none;
-    margin: 10px 0 0 3px;
-    font-family: "Roboto";
-    line-height: 30px;
-  }
-
-  .logo-end {
-    font-family: "Shrikhand";
-  }
-  .logo-end .email_contact {
-    text-decoration: none;
+    margin-left: 50px;
   }
 
   .menu-title {
     border: 2px solid black;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
   .menu-title .left-title {
     line-height: 20px;
@@ -339,174 +323,76 @@
   }
 
   .right-title {
-    border: 3px solid black;
     height: 30px;
-    border: 2px solid black;
-  }
-
-  .title_food {
-    width: 70%;
     border: 2px solid black;
   }
 
   .food_sides {
     padding-left: 340px;
+    font-family: "Roboto";
+    font-weight: bolder;
   }
 
   .menu_app1 {
+    font-family: "Roboto";
     border: 2px solid black;
     height: 30px;
     padding-top: 10px;
     padding-left: 10px;
+    margin-top: 10px;
   }
 
   .menu_1, .menu_2, .menu_3 {
-    border: 3px solid black;
+    font-family: "Roboto";
+    font-weight: bold;
+    background-color: #ffffff;
     width: 99.2%;
     height: 50px;
+    margin-top: 15px;
+    border-radius: 20px;
+    border: 2px solid black;
+    padding-left: 10px;
   }
 
   .menu_app2 {
-    border: 3px solid black;
+    font-family: "Roboto";
+    border: 2px solid black;
     height: 30px;
     padding-top: 10px;
     padding-left: 10px;
+    margin-top: 10px;
   }
 
   .menu_4, .menu_5, .menu_6 {
+    font-family: "Roboto";
+    background-color: #ffffff;
     border: 3px solid black;
     width: 99.2%;
     height: 50px;
-  }
-
-  .menu_app3 {
-    border: 3px solid black;
-    height: 30px;
-    padding-top: 10px;
+    margin-top: 15px;
+    border-radius: 20px;
     padding-left: 10px;
   }
 
+  .menu_app3 {
+    font-family: "Roboto";
+    border: 2px solid black;
+    height: 30px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-top: 10px;
+  }
+
   .menu_7, .menu_8, .menu_9 {
-    border: 3px solid black;
+    font-family: "Roboto";
+    border: 2px solid black;
+    background-color: #ffffff;
+    margin-top: 15px;
     width: 99.2%;
     height: 50px;
+    border-radius: 20px;
+    padding-left: 10px;
   }
-}
-/*bastille css*/
-.css-selector {
-  font-family: "Shrikhand", auto;
-  border: 3px solid black;
-  font-family: "Roboto", auto;
-}
-
-.primary-img {
-  background-image: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
-  display: block;
-  width: 100%;
-  height: 250px;
-  background-size: cover;
-}
-
-.menu-content {
-  background-color: #ffff;
-  min-height: 1000px;
-  border: 2px solid black;
-  margin-top: -60px;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-}
-
-.title {
-  font-family: "Shrikhand";
-  margin-right: 30px;
-}
-
-footer {
-  background-color: #353535;
-  width: 100%;
-  min-height: 100px;
-  padding: 10px;
-  color: #fff;
-}
-footer ul {
-  list-style: none;
-  text-decoration-style: none;
-  margin: 10px 0 0 3px;
-  font-family: "Roboto";
-  line-height: 30px;
-}
-
-.logo-end {
-  font-family: "Shrikhand";
-}
-.logo-end .email_contact {
-  text-decoration: none;
-}
-
-.menu-title {
-  border: 2px solid black;
-  display: flex;
-  flex-direction: column;
-}
-.menu-title .left-title {
-  line-height: 20px;
-  margin-right: 50px;
-  width: 70%;
-  height: 30px;
-}
-
-.right-title {
-  border: 3px solid black;
-  height: 30px;
-  border: 2px solid black;
-}
-
-.title_food {
-  width: 70%;
-  border: 2px solid black;
-}
-
-.food_sides {
-  padding-left: 340px;
-}
-
-.menu_app1 {
-  border: 2px solid black;
-  height: 30px;
-  padding-top: 10px;
-  padding-left: 10px;
-}
-
-.menu_1, .menu_2, .menu_3, .menu_3b {
-  border: 3px solid black;
-  width: 99.2%;
-  height: 50px;
-}
-
-.menu_app2 {
-  border: 3px solid black;
-  height: 30px;
-  padding-top: 10px;
-  padding-left: 10px;
-}
-
-.menu_4, .menu_5, .menu_6 {
-  border: 3px solid black;
-  width: 99.2%;
-  height: 50px;
-}
-
-.menu_app3 {
-  border: 3px solid black;
-  height: 30px;
-  padding-top: 10px;
-  padding-left: 10px;
-}
-
-.menu_7, .menu_8, .menu_9 {
-  border: 3px solid black;
-  width: 99.2%;
-  height: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
