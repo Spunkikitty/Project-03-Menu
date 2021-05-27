@@ -3,17 +3,34 @@
   padding: 0px;
 }
 
+a {
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 768px) {
   .css-selector {
     font-family: "Shrikhand", auto;
-    border: 3px solid black;
     font-family: "Roboto", auto;
+  }
+
+  .new-tag {
+    display: flex;
+    position: relative;
+    z-index: 9000;
+    margin-bottom: -40px;
+    left: 290px;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 30px;
+    background-color: #99e2d0;
+    font-family: "Roboto";
+    color: #278870;
   }
 
   nav {
     padding-top: 15px;
     padding-bottom: 10px;
-    border: 1px solid black;
     width: 100%;
   }
 
@@ -24,12 +41,10 @@
   }
 
   .paris-container {
-    border: 3px solid black;
     width: 100%;
   }
 
   .paris-top {
-    border: 1px solid black;
     background-color: #ccc;
     padding-left: 28%;
     padding-top: 15px;
@@ -44,7 +59,6 @@
 
   .like-1 {
     font-family: "Roboto";
-    border: 3px solid black;
     line-height: 2.5em;
     padding-top: 20px;
     font-weight: 900;
@@ -53,7 +67,6 @@
   }
 
   .cover-1 {
-    border: 3px solid black;
     font-family: "Roboto";
     padding: 5% 5% 5% 5%;
     text-align: center;
@@ -61,7 +74,15 @@
     font-weight: lighter;
   }
 
+  .btn:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(#fface8), to(#ae80e5));
+    background: linear-gradient(#fface8, #ae80e5);
+    -webkit-box-shadow: 0px 10px 10px 0px rgba(12, 12, 12, 0.1);
+    box-shadow: 0px 10px 10px 0px rgba(12, 12, 12, 0.1);
+  }
+
   .btn-1 {
+    color: #fff;
     background: linear-gradient(to bottom, #FF79DA, #9356DC);
     border-radius: 45px;
     border: 2px solid #f2f2f2;
@@ -71,8 +92,11 @@
   }
 
   .our-1 {
+    text-decoration: none !important;
     font-family: "Roboto";
-    color: #f2f2f2;
+  }
+  .our-1 a {
+    color: #fff;
   }
 
   .how-it-works {
@@ -204,10 +228,44 @@
   }
 
   .fa-heart {
+    margin-top: 13px;
     margin-left: 40px;
     font-weight: 100px;
   }
 
+  .fas {
+    visibility: hidden;
+    color: #9356dc;
+    position: relative;
+    top: -41px;
+    left: 30px;
+  }
+
+  .far {
+    position: relative;
+    left: 30px;
+  }
+  .far:hover {
+    visibility: hidden;
+  }
+
+  .title-right:hover .fas {
+    visibility: visible;
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
   .food_card-2 {
     object-fit: cover;
   }
@@ -229,6 +287,8 @@
     padding-left: 10px;
   }
   .food-description .title-left .title-right {
+    display: flex;
+    flex-flow: row;
     width: 28%;
     text-align: center;
     padding-left: 10px;
@@ -277,8 +337,10 @@
   .logo-end {
     font-family: "Shrikhand";
   }
-  .logo-end .email_contact {
-    text-decoration: none;
+
+  .link {
+    text-decoration: none !important;
+    color: inherit;
   }
 
   /*palette css*/
@@ -324,7 +386,6 @@
 
   .right-title {
     height: 30px;
-    border: 2px solid black;
   }
 
   .food_sides {
@@ -332,67 +393,6 @@
     font-family: "Roboto";
     font-weight: bolder;
   }
-
-  .menu_app1 {
-    font-family: "Roboto";
-    border: 2px solid black;
-    height: 30px;
-    padding-top: 10px;
-    padding-left: 10px;
-    margin-top: 10px;
-  }
-
-  .menu_1, .menu_2, .menu_3 {
-    font-family: "Roboto";
-    font-weight: bold;
-    background-color: #ffffff;
-    width: 99.2%;
-    height: 50px;
-    margin-top: 15px;
-    border-radius: 20px;
-    border: 2px solid black;
-    padding-left: 10px;
-  }
-
-  .menu_app2 {
-    font-family: "Roboto";
-    border: 2px solid black;
-    height: 30px;
-    padding-top: 10px;
-    padding-left: 10px;
-    margin-top: 10px;
-  }
-
-  .menu_4, .menu_5, .menu_6 {
-    font-family: "Roboto";
-    background-color: #ffffff;
-    border: 3px solid black;
-    width: 99.2%;
-    height: 50px;
-    margin-top: 15px;
-    border-radius: 20px;
-    padding-left: 10px;
-  }
-
-  .menu_app3 {
-    font-family: "Roboto";
-    border: 2px solid black;
-    height: 30px;
-    padding-top: 10px;
-    padding-left: 10px;
-    margin-top: 10px;
-  }
-
-  .menu_7, .menu_8, .menu_9 {
-    font-family: "Roboto";
-    border: 2px solid black;
-    background-color: #ffffff;
-    margin-top: 15px;
-    width: 99.2%;
-    height: 50px;
-    border-radius: 20px;
-    padding-left: 10px;
-  }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
