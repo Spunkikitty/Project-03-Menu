@@ -21,7 +21,7 @@
      .fa-arrow-left{
      color:#5a5f6b;
      margin-top:10px;
-      
+     visibility: visible;
   }
    
     .css-selector {
@@ -60,6 +60,8 @@
         
       }
     }
+
+
 .underline{ 
   border-bottom: 2px solid #99e2d0 ;;
 }
@@ -79,16 +81,52 @@
       
       
 
-        
+    .fa-heart{ 
+      margin-top: 30px;
+      margin-left:40px;
+      font-weight: 100px;
+    
+    }
+    
+    .fas{
+      visibility:hidden;
+      color:#9356dc;
+      position:relative;
+      top:-41px;
+      left:30px;
+      }
+    
+      .far{
+      position:relative;
+      left:30px;
+        &:hover{
+          visibility: hidden;
+         
+        }
+      }
+    
+      .title-right:hover .fas {
+        visibility: visible;
+        animation: fadeIn ease 3s;
+      -webkit-animation: fadeIn ease 3s;
+      -moz-animation: fadeIn ease 3s;
+      -o-animation: fadeIn ease 3s;
+      -ms-animation: fadeIn ease 3s;
+    }
+      
+    @keyframes fadeIn {
+        0% {
+          opacity:0;
+        }
+        100% {
+          opacity:1;
+        }
+      }
+      
+      
 
    
-   .fa-heart{ 
-    margin-top: 13px;
-    margin-left:40px;
-    font-weight: 100px;
-  
-    
-  }
+ 
   
   .right_title .fas{
     visibility:hidden;
@@ -124,27 +162,11 @@
         opacity:1;
       }
     }
-    
-    
   
-  .fa-heart:hover{
-    transform-origin:center;
-    transform:scaleX(1) ;
-    -webkit-animation-fill-mode: forwards;
-  
-   
-  }
-  
-
-
-
-
 
         h4{
           padding-top:15px;
-
-
-        }
+  }
 .ingredient {
         line-height: 22px;
         height:60px;
@@ -195,9 +217,6 @@
               background:#99e2d0;
               color:#fff;
               animation: 4s linear;
-           
-
-             -webkit-transition: transform 1000ms;
              
 
               @keyframes spin {
@@ -228,7 +247,6 @@ right: -10px;
 #option-8:hover i, #option-9:hover i{
   -webkit-transform: rotate(-360deg);
   transform: rotate(-360deg);
-
 }
 
 #option-1:hover .ingredient_description{
