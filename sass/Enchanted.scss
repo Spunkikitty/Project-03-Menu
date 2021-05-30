@@ -3,7 +3,7 @@
   padding: 0px;
 }
 
-@media only screen and (max-width: 768px) {
+
   nav {
     display: flex;
     flex-direction: row;
@@ -14,7 +14,7 @@
     width: 40%;
     margin: 5px auto;
   }
-  .fa-arrow-left {
+ nav .fa-arrow-left {
     color: #5a5f6b;
     margin-top: 10px;
   }
@@ -160,9 +160,10 @@
       }
     }
 
-    .ingredient_price {
+   .ingredient_price {
       padding-top: 37px;
       font-weight: bold;
+      margin-left: 25px;
     }
     .ingredient-check {
       width: 78px;
@@ -373,7 +374,6 @@
 
   footer {
     background-color: #353535;
-    width: 100%;
     min-height: 100px;
     padding: 10px;
     color: #fff;
@@ -390,4 +390,4 @@
     text-decoration: none !important;
     color: inherit;
   }
-}
+//}

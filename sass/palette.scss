@@ -3,7 +3,16 @@
     padding:0px;
   }
   
-  @media only screen and (max-width: 768px) {
+ 
+
+@keyframes spin {
+    0%, 15% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
    
     nav{ 
       display:flex;
@@ -18,10 +27,10 @@
     margin:5px auto;
 
    }
-     .fa-arrow-left{
+    nav .fa-arrow-left{
      color:#5a5f6b;
      margin-top:10px;
-     visibility: visible;
+    
   }
    
     .css-selector {
@@ -88,7 +97,7 @@
     
     }
     
-    .fas{
+  .right_title .fas{
       visibility:hidden;
       color:#9356dc;
       position:relative;
@@ -183,7 +192,8 @@
             overflow:hidden;
           
             .ingredient_description{
-           width:170%;
+              
+             width:300%;
            font-family: "Roboto";
            
            
@@ -196,8 +206,10 @@
         
         
          .ingredient_price{
+           
            padding-top:37px;
            font-weight:bold;
+           margin-left: 25px;
            
          }
          .ingredient-check{
@@ -213,20 +225,11 @@
            background: #99e2d0;
            
            .fa-check-circle{
-              
+              transform-origin: center;
               background:#99e2d0;
               color:#fff;
-              animation: 4s linear;
              
-
-              @keyframes spin {
-  0% { transform: rotate(1) (0deg); }
-  
-                         
-  100% { transform: rotate(360deg); }
-            
-          }
-        }
+            }
       }
 
     }
@@ -245,8 +248,10 @@ right: -10px;
 #option-1:hover  i, #option-2:hover i, #option-3:hover i, #option-3:hover i, 
 #option-4:hover i, #option-5:hover i, #option-6:hover i, #option-7:hover i,
 #option-8:hover i, #option-9:hover i{
-  -webkit-transform: rotate(-360deg);
-  transform: rotate(-360deg);
+
+  -moz-transform: rotate(360deg);
+-webkit-transform: rotate(-360deg);
+  transform: rotate (-360deg);
 }
 
 #option-1:hover .ingredient_description{
@@ -447,4 +452,4 @@ footer{
       } 
   
   
-    }
+    

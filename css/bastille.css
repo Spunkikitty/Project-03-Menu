@@ -3,377 +3,375 @@
   padding: 0px;
 }
 
-@media only screen and (max-width: 768px) {
-  nav {
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
-  }
+nav {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
 
-  .logo_top {
-    width: 40%;
-    margin: 5px auto;
-  }
+.logo_top {
+  width: 40%;
+  margin: 5px auto;
+}
 
-  .fa-arrow-left {
-    color: #5a5f6b;
-    margin-top: 10px;
-  }
+nav .fa-arrow-left {
+  color: #5a5f6b;
+  margin-top: 10px;
+}
 
-  .underline {
-    border-bottom: 2px solid #99e2d0;
-  }
+.underline {
+  border-bottom: 2px solid #99e2d0;
+}
 
-  .css-selector {
-    font-family: "Shrikhand", auto;
-    font-family: "Roboto", auto;
-  }
+.css-selector {
+  font-family: "Shrikhand", auto;
+  font-family: "Roboto", auto;
+}
 
-  .primary-img {
-    background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
-    display: block;
-    width: 100%;
-    height: 250px;
-    background-size: cover;
-  }
+.primary-img {
+  background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  display: block;
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+}
 
-  .menu-content {
-    background-color: #f6f6f6;
-    min-height: 1000px;
-    margin-top: -60px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    font-family: "Roboto";
-  }
-  .menu-content h3 {
-    margin: 25px 20px 20px 20px;
-    line-height: 3px;
-  }
+.menu-content {
+  background-color: #f6f6f6;
+  min-height: 1000px;
+  margin-top: -60px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  font-family: "Roboto";
+}
+.menu-content h3 {
+  margin: 25px 20px 20px 20px;
+  line-height: 3px;
+}
 
-  .underline {
-    border-bottom: 2px solid #99e2d0;
-  }
+.underline {
+  border-bottom: 2px solid #99e2d0;
+}
 
-  .menu-title {
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    margin: 30px auto;
-  }
-  .menu-title .left_title {
-    width: 90%;
-  }
+.menu-title {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: 30px auto;
+}
+.menu-title .left_title {
+  width: 90%;
+}
 
-  .fa-heart {
-    margin-top: 35px;
-    margin-left: 30px;
-    font-weight: 100px;
-  }
+.fa-heart {
+  margin-top: 35px;
+  margin-left: 30px;
+  font-weight: 100px;
+}
 
-  .fas {
-    visibility: hidden;
-    color: #9356dc;
-    position: relative;
-    top: -41px;
-    left: 30px;
-  }
+.fas {
+  visibility: hidden;
+  color: #9356dc;
+  position: relative;
+  top: -41px;
+  left: 30px;
+}
 
-  .far {
-    position: relative;
-    left: 30px;
-  }
-  .far:hover {
-    visibility: hidden;
-  }
+.far {
+  position: relative;
+  left: 30px;
+}
+.far:hover {
+  visibility: hidden;
+}
 
-  .title-right:hover .fas {
-    visibility: visible;
-    animation: fadeIn ease 3s;
-    -webkit-animation: fadeIn ease 3s;
-    -moz-animation: fadeIn ease 3s;
-    -o-animation: fadeIn ease 3s;
-    -ms-animation: fadeIn ease 3s;
-  }
+.title-right:hover .fas {
+  visibility: visible;
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
+}
 
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  .fas {
-    visibility: hidden;
-    color: #9356dc;
-    position: relative;
-    top: -41px;
-    left: 30px;
+  100% {
+    opacity: 1;
   }
+}
+.fas {
+  visibility: hidden;
+  color: #9356dc;
+  position: relative;
+  top: -41px;
+  left: 30px;
+}
 
-  .far {
-    position: relative;
-    left: 30px;
-  }
-  .far:hover {
-    visibility: hidden;
-  }
+.far {
+  position: relative;
+  left: 30px;
+}
+.far:hover {
+  visibility: hidden;
+}
 
-  .title-right:hover .fas {
-    visibility: visible;
-    animation: fadeIn ease 3s;
-    -webkit-animation: fadeIn ease 3s;
-    -moz-animation: fadeIn ease 3s;
-    -o-animation: fadeIn ease 3s;
-    -ms-animation: fadeIn ease 3s;
-  }
+.title-right:hover .fas {
+  visibility: visible;
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
+}
 
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  .ingredient {
-    line-height: 22px;
-    height: 60px;
-    width: 90%;
-    margin: 18px auto;
-    display: flex;
-    padding: 10px;
-    flex-direction: row;
-    border-radius: 10px;
-    background-color: #fff;
-    box-shadow: 0 10px 10px 0 rgba(12, 12, 12, 0.1);
-    -webkit-animation: option-loading 3s forwards;
-    animation: option-loading 3s forwards;
-    overflow: hidden;
+  100% {
+    opacity: 1;
   }
-  .ingredient .ingredient_description {
-    width: 170%;
-    font-family: "Roboto";
+}
+.ingredient {
+  line-height: 22px;
+  height: 60px;
+  width: 90%;
+  margin: 18px auto;
+  display: flex;
+  padding: 10px;
+  flex-direction: row;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 10px 10px 0 rgba(12, 12, 12, 0.1);
+  -webkit-animation: option-loading 3s forwards;
+  animation: option-loading 3s forwards;
+  overflow: hidden;
+}
+.ingredient .ingredient_description {
+  width: 170%;
+  font-family: "Roboto";
+}
+.ingredient .ingredient_description p {
+  margin-bottom: 5px;
+}
+.ingredient .ingredient_price {
+  padding-top: 37px;
+  font-weight: bold;
+  margin-left: 25px;
+}
+.ingredient .ingredient-check {
+  width: 78px;
+  height: 47px;
+  text-align: center;
+  margin-top: -11px;
+  position: relative;
+  right: -90px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-top: 35px;
+  background: #99e2d0;
+}
+.ingredient .ingredient-check .fa-check-circle {
+  background: #99e2d0;
+  color: #fff;
+  animation: 4s linear;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(1) 0deg;
   }
-  .ingredient .ingredient_description p {
-    margin-bottom: 5px;
+  100% {
+    transform: rotate(360deg);
   }
-  .ingredient .ingredient_price {
-    padding-top: 37px;
-    font-weight: bold;
-  }
-  .ingredient .ingredient-check {
-    width: 78px;
-    height: 47px;
-    text-align: center;
-    margin-top: -11px;
-    position: relative;
-    right: -90px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding-top: 35px;
-    background: #99e2d0;
-  }
-  .ingredient .ingredient-check .fa-check-circle {
-    background: #99e2d0;
-    color: #fff;
-    animation: 4s linear;
-  }
-  @keyframes spin {
-    0% {
-      transform: rotate(1) 0deg;
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
+}
 
-  #option-1:hover .ingredient-check-1 {
-    -webkit-transform: translateX(0px);
-    transform: translateX(0px);
-    -webkit-transition: 0.8s ease-in-out;
-    transition: 0.8s ease-in-out;
-    right: -10px;
-  }
+#option-1:hover .ingredient-check-1 {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+  -webkit-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
+  right: -10px;
+}
 
-  #option-1:hover i, #option-2:hover i, #option-3:hover i, #option-3:hover i,
+#option-1:hover i, #option-2:hover i, #option-3:hover i, #option-3:hover i,
 #option-4:hover i, #option-5:hover i, #option-6:hover i, #option-7:hover i,
 #option-8:hover i, #option-9:hover i {
-    -webkit-transform: rotate(-360deg);
-    transform: rotate(-360deg);
-  }
+  -webkit-transform: rotate(-360deg);
+  transform: rotate(-360deg);
+}
 
-  #option-1:hover .ingredient_description {
-    width: calc(100% - 100px);
-  }
+#option-1:hover .ingredient_description {
+  width: calc(100% - 100px);
+}
 
-  #option-2:hover .ingredient-check-2 {
-    -webkit-transform: translateX(0px);
-    transform: translateX(0px);
-    -webkit-transition: 0.8s ease-in-out;
-    transition: 0.8s ease-in-out;
-    right: -10px;
-  }
+#option-2:hover .ingredient-check-2 {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+  -webkit-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
+  right: -10px;
+}
 
-  #option-2:hover .ingredient_description {
-    width: calc(100% - 100px);
-  }
+#option-2:hover .ingredient_description {
+  width: calc(100% - 100px);
+}
 
-  #option-3:hover .ingredient-check-3 {
-    -webkit-transform: translateX(0px);
-    transform: translateX(0px);
-    -webkit-transition: 0.8s ease-in-out;
-    transition: 0.8s ease-in-out;
-    right: -10px;
-  }
+#option-3:hover .ingredient-check-3 {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+  -webkit-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
+  right: -10px;
+}
 
-  #option-3:hover .ingredient_description {
-    width: calc(100% - 100px);
-  }
+#option-3:hover .ingredient_description {
+  width: calc(100% - 100px);
+}
 
-  #option-4:hover .ingredient-check-4 {
-    -webkit-transform: translateX(0px);
-    transform: translateX(0px);
-    -webkit-transition: 0.8s ease-in-out;
-    transition: 0.8s ease-in-out;
-    right: -10px;
-  }
+#option-4:hover .ingredient-check-4 {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+  -webkit-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
+  right: -10px;
+}
 
-  #option-4:hover .ingredient_description {
-    width: calc(100% - 100px);
-  }
+#option-4:hover .ingredient_description {
+  width: calc(100% - 100px);
+}
 
-  #option-5:hover .ingredient-check-5 {
-    -webkit-transform: translateX(0px);
-    transform: translateX(0px);
-    -webkit-transition: 0.8s ease-in-out;
-    transition: 0.8s ease-in-out;
-    right: -10px;
-  }
+#option-5:hover .ingredient-check-5 {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+  -webkit-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
+  right: -10px;
+}
 
-  #option-5:hover .ingredient_description {
-    width: calc(100% - 100px);
-  }
+#option-5:hover .ingredient_description {
+  width: calc(100% - 100px);
+}
 
-  #option-6:hover .ingredient-check-6 {
-    -webkit-transform: translateX(0px);
-    transform: translateX(0px);
-    -webkit-transition: 0.8s ease-in-out;
-    transition: 0.8s ease-in-out;
-    right: -10px;
-  }
+#option-6:hover .ingredient-check-6 {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+  -webkit-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
+  right: -10px;
+}
 
-  #option-6:hover .ingredient_description {
-    width: calc(100% - 100px);
-  }
+#option-6:hover .ingredient_description {
+  width: calc(100% - 100px);
+}
 
-  #option-7:hover .ingredient-check-7 {
-    -webkit-transform: translateX(0px);
-    transform: translateX(0px);
-    -webkit-transition: 0.8s ease-in-out;
-    transition: 0.8s ease-in-out;
-    right: -10px;
-  }
+#option-7:hover .ingredient-check-7 {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+  -webkit-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
+  right: -10px;
+}
 
-  #option-7:hover .ingredient_description {
-    width: calc(100% - 100px);
-  }
+#option-7:hover .ingredient_description {
+  width: calc(100% - 100px);
+}
 
-  #option-8:hover .ingredient-check-8 {
-    -webkit-transform: translateX(0px);
-    transform: translateX(0px);
-    -webkit-transition: 0.8s ease-in-out;
-    transition: 0.8s ease-in-out;
-    right: -10px;
-  }
+#option-8:hover .ingredient-check-8 {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+  -webkit-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
+  right: -10px;
+}
 
-  #option-8:hover .ingredient_description {
-    width: calc(100% - 100px);
-  }
+#option-8:hover .ingredient_description {
+  width: calc(100% - 100px);
+}
 
-  #option-9:hover .ingredient-check-9 {
-    -webkit-transform: translateX(0px);
-    transform: translateX(0px);
-    -webkit-transition: 0.8s ease-in-out;
-    transition: 0.8s ease-in-out;
-    right: -10px;
-  }
+#option-9:hover .ingredient-check-9 {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+  -webkit-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
+  right: -10px;
+}
 
-  #option-9:hover .ingredient_description {
-    width: calc(100% - 100px);
-  }
+#option-9:hover .ingredient_description {
+  width: calc(100% - 100px);
+}
 
-  @-webkit-keyframes option-loading {
-    0% {
-      color: white;
-      -webkit-transform: translateY(10px);
-      transform: translateY(10px);
-    }
-    100% {
-      background-color: #fff;
-      color: black;
-      -webkit-transform: translateY(0px);
-      transform: translateY(0px);
-      -webkit-box-shadow: 0px 10px 10px 0px rgba(12, 12, 12, 0.1);
-      box-shadow: 0px 10px 10px 0px rgba(12, 12, 12, 0.1);
-    }
-  }
-  @keyframes option-loading {
-    0% {
-      color: white;
-      -webkit-transform: translateY(10px);
-      transform: translateY(10px);
-    }
-    100% {
-      background-color: #fff;
-      color: black;
-      -webkit-transform: translateY(0px);
-      transform: translateY(0px);
-      -webkit-box-shadow: 0px 10px 10px 0px rgba(12, 12, 12, 0.1);
-      box-shadow: 0px 10px 10px 0px rgba(12, 12, 12, 0.1);
-    }
-  }
-  .order_btn {
-    width: 200px;
-    height: 30px;
-    text-align: center;
-    margin: 50px auto;
-    padding-top: 20px;
-    display: block;
-    border-radius: 55px;
-    text-decoration: none;
+@-webkit-keyframes option-loading {
+  0% {
     color: white;
-    background: linear-gradient(to bottom, #FF79DA, #9356DC);
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
   }
+  100% {
+    background-color: #fff;
+    color: black;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-box-shadow: 0px 10px 10px 0px rgba(12, 12, 12, 0.1);
+    box-shadow: 0px 10px 10px 0px rgba(12, 12, 12, 0.1);
+  }
+}
+@keyframes option-loading {
+  0% {
+    color: white;
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+  100% {
+    background-color: #fff;
+    color: black;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-box-shadow: 0px 10px 10px 0px rgba(12, 12, 12, 0.1);
+    box-shadow: 0px 10px 10px 0px rgba(12, 12, 12, 0.1);
+  }
+}
+.order_btn {
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  margin: 50px auto;
+  padding-top: 20px;
+  display: block;
+  border-radius: 55px;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+}
 
-  .title {
-    font-family: "Shrikhand";
-    margin-top: 30px;
-  }
+.title {
+  font-family: "Shrikhand";
+  margin-top: 30px;
+}
 
-  .logo-end {
-    font-family: "Shrikhand";
-  }
+.logo-end {
+  font-family: "Shrikhand";
+}
 
-  footer {
-    background-color: #353535;
-    width: 100%;
-    min-height: 100px;
-    padding: 10px;
-    color: #fff;
-  }
-  footer ul {
-    list-style: none;
-    text-decoration-style: none;
-    margin: 10px 0 0 3px;
-    font-family: "Roboto";
-    line-height: 30px;
-  }
+footer {
+  background-color: #353535;
+  min-height: 100px;
+  padding: 10px;
+  color: #fff;
+}
+footer ul {
+  list-style: none;
+  text-decoration-style: none;
+  margin: 10px 0 0 3px;
+  font-family: "Roboto";
+  line-height: 30px;
+}
 
-  .link {
-    text-decoration: none !important;
-    color: inherit;
-  }
+.link {
+  text-decoration: none !important;
+  color: inherit;
 }
 
 /*# sourceMappingURL=bastille.css.map */
