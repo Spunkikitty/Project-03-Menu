@@ -115,7 +115,7 @@ nav .fa-arrow-left {
   visibility: hidden;
   color: #9356dc;
   position: relative;
-  top: -41px;
+  top: -58px;
   left: 30px;
 }
 
@@ -127,7 +127,7 @@ nav .fa-arrow-left {
   visibility: hidden;
 }
 
-.title-right:hover .fas {
+.right_title:hover .fas {
   visibility: visible;
   animation: fadeIn ease 3s;
   -webkit-animation: fadeIn ease 3s;

@@ -60,19 +60,21 @@
     }
   }
 
-  .fa-heart {
-    margin-top: 35px;
-    margin-left: 30px;
+  .fa-heart{ 
+    margin-top: 30px;
+    margin-left:40px;
     font-weight: 100px;
   }
+  
 
-  .fas {
+
+  .right_title .fas {
     visibility: hidden;
     color: #9356dc;
 
     position: relative;
-    top: -41px;
-    left: 30px;
+    top: 1px;
+    left: -42px;
   }
 
   .far {
@@ -83,42 +85,7 @@
     }
   }
 
-  .title-right:hover .fas {
-    visibility: visible;
-    animation: fadeIn ease 3s;
-    -webkit-animation: fadeIn ease 3s;
-    -moz-animation: fadeIn ease 3s;
-    -o-animation: fadeIn ease 3s;
-    -ms-animation: fadeIn ease 3s;
-  }
-
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  .fas {
-    visibility: hidden;
-    color: #9356dc;
-
-    position: relative;
-    top: -41px;
-    left: 30px;
-  }
-
-  .far {
-    position: relative;
-    left: 30px;
-    &:hover {
-      visibility: hidden;
-    }
-  }
-
-  .title-right:hover .fas {
+  .right_title:hover .fas {
     visibility: visible;
     animation: fadeIn ease 3s;
     -webkit-animation: fadeIn ease 3s;
@@ -152,7 +119,7 @@
     overflow: hidden;
 
     .ingredient_description {
-      width: 170%;
+      width: 350%;
       font-family: "Roboto";
 
       p {
@@ -161,7 +128,7 @@
     }
 
    .ingredient_price {
-      padding-top: 37px;
+      padding-top: 25px;
       font-weight: bold;
       margin-left: 25px;
     }
@@ -178,9 +145,10 @@
       background: #99e2d0;
 
       .fa-check-circle {
+        transform-origin: center;
         background: #99e2d0;
         color: #fff;
-        animation: 4s linear;
+        
 
         @keyframes spin {
           0% {
@@ -390,4 +358,7 @@
     text-decoration: none !important;
     color: inherit;
   }
-//}
+
+
+
+

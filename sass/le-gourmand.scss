@@ -18,7 +18,7 @@
     margin:5px auto;
 
    }
-  nav   .fa-arrow-left{
+  nav  .fa-arrow-left{
      color:#5a5f6b;
      margin-top:10px;
       
@@ -75,12 +75,12 @@
           font-weight: 100px;
         }
       
-        .fas {
+       .right_title .fas {
           visibility: hidden;
           color: #9356dc;
       
           position: relative;
-          top: -41px;
+          top: -63px;
           left: 30px;
         }
       
@@ -92,7 +92,7 @@
           }
         }
       
-        .title-right:hover .fas {
+        .right_title:hover .fas {
           visibility: visible;
           animation: fadeIn ease 3s;
           -webkit-animation: fadeIn ease 3s;
@@ -110,40 +110,6 @@
           }
         }
       
-        .fas {
-          visibility: hidden;
-          color: #9356dc;
-      
-          position: relative;
-          top: -41px;
-          left: 30px;
-        }
-      
-        .far {
-          position: relative;
-          left: 30px;
-          &:hover {
-            visibility: hidden;
-          }
-        }
-      
-        .title-right:hover .fas {
-          visibility: visible;
-          animation: fadeIn ease 3s;
-          -webkit-animation: fadeIn ease 3s;
-          -moz-animation: fadeIn ease 3s;
-          -o-animation: fadeIn ease 3s;
-          -ms-animation: fadeIn ease 3s;
-        }
-      
-        @keyframes fadeIn {
-          0% {
-            opacity: 0;
-          }
-          100% {
-            opacity: 1;
-          }
-        }
 
         .ingredient {
           line-height: 22px;
