@@ -41,17 +41,33 @@ nav {
 
 .paris-container {
   width: 100%;
-}
-.paris-container .paris-top {
-  background-color: #ccc;
-  padding-left: 28%;
-  padding-top: 15px;
+  background-color: #eaeaea;
+  padding-left: 38%;
+  padding-top: 30px;
   padding-bottom: 10px;
 }
-.paris-container .paris-top .fa-map-marker-alt {
+
+.paris-top .fas {
+  position: relative;
+  top: 1px;
+  left: -36px;
+}
+
+article .fa-map-marker-alt {
   display: block;
   margin-right: 100px;
   color: #4c4c4c;
+  visibility: visible;
+  margin-top: -0.5em;
+}
+
+.paree {
+  font-family: "Roboto";
+  margin-bottom: -20px;
+  margin-left: -20px;
+  font-weight: bolder;
+  color: #4c4c4c;
+  border: 1px solid red;
 }
 
 .like-1 {
@@ -64,10 +80,11 @@ nav {
 }
 
 .cover-1 {
+  margin-bottom: 50px;
   font-family: "Roboto";
   padding: 5% 5% 5% 5%;
   text-align: center;
-  color: #5D5D5D;
+  color: #5d5d5d;
   font-weight: lighter;
 }
 
@@ -80,10 +97,10 @@ nav {
 
 .btn-1 {
   color: #fff;
-  background: linear-gradient(to bottom, #FF79DA, #9356dc);
+  background: linear-gradient(to bottom, #ff79da, #9356dc);
   border-radius: 45px;
   border: 2px solid #f2f2f2;
-  padding: 1.5em 1.5em 1.5em 1.5em;
+  padding: 1.5em 3.5em 1.5em 4.5em;
   margin: 10px 5% 12% 18%;
   min-width: 100px;
 }
@@ -97,7 +114,7 @@ nav {
 }
 
 .how-it-works {
-  margin-top: 20px;
+  margin-top: 32%;
   font-family: "Roboto";
   padding-left: 15px;
   font-weight: bolder;
@@ -128,11 +145,12 @@ nav {
   margin-left: -22px;
 }
 
-.fa-mobile-alt, .fa-list-ul {
+.fa-mobile-alt,
+.fa-list-ul {
   font-family: "Roboto";
   word-spacing: 15px;
   padding: 10px;
-  color: #3C3C3C;
+  color: #3c3c3c;
 }
 
 .fa-store {
@@ -183,15 +201,15 @@ nav {
 }
 
 .new-1 {
-  border: 1px solid #69E8A9;
-  background-color: #69E8A9;
+  border: 1px solid #69e8a9;
+  background-color: #69e8a9;
   width: 85px;
   height: 30px;
 }
 
 .green-2 {
   font-family: "Roboto";
-  color: #005C32;
+  color: #005c32;
   font-weight: bold;
 }
 
@@ -199,7 +217,8 @@ nav {
   margin-bottom: 30px;
 }
 
-.title-2, .location {
+.title-2,
+.location {
   padding-left: 15px;
 }
 
@@ -226,10 +245,10 @@ nav {
 .fa-heart {
   margin-top: 13px;
   margin-left: 40px;
-  font-weight: 100px;
+  font-weight: 100;
 }
 
-.fas {
+.title-right .fas {
   visibility: hidden;
   color: #9356dc;
   position: relative;
@@ -291,7 +310,7 @@ nav {
 }
 
 .restaurant-1 {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border-radius: 30px;
   padding: 15px;
   width: 100%;
@@ -302,7 +321,7 @@ nav {
 .btn-5 {
   display: block;
   color: white;
-  background: linear-gradient(to bottom, #FF79DA, #9356dc);
+  background: linear-gradient(to bottom, #ff79da, #9356dc);
   margin: 15px auto;
   border-radius: 25px;
   padding: 1.5em 1.5em 1.5em 1.5em;
@@ -323,7 +342,7 @@ footer {
 }
 footer ul {
   list-style: none;
-  text-decoration-style: none;
+  text-decoration: none;
   margin: 10px 0 0 3px;
   font-family: "Roboto";
   line-height: 30px;

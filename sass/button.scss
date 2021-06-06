@@ -18,7 +18,7 @@ $cd-txt: #15DEA5;
         cursor: pointer;
         padding: 1.85rem 3rem;
         border-radius: 10rem;
-        transition:
+        transition:transform (0);
         transform: scale(1);
         &:hover {
             transform: scale(1.15);

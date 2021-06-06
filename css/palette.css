@@ -75,7 +75,7 @@ nav .fa-arrow-left {
 .fa-heart {
   margin-top: 30px;
   margin-left: 40px;
-  font-weight: 100px;
+  font-weight: 100;
 }
 
 .right_title .fas {
@@ -201,9 +201,16 @@ h4 {
   right: -10px;
 }
 
-#option-1:hover i, #option-2:hover i, #option-3:hover i, #option-3:hover i,
-#option-4:hover i, #option-5:hover i, #option-6:hover i, #option-7:hover i,
-#option-8:hover i, #option-9:hover i {
+#option-1:hover i,
+#option-2:hover i,
+#option-3:hover i,
+#option-3:hover i,
+#option-4:hover i,
+#option-5:hover i,
+#option-6:hover i,
+#option-7:hover i,
+#option-8:hover i,
+#option-9:hover i {
   -moz-transform: rotate(360deg);
   -webkit-transform: rotate(-360deg);
   transform: rotate -360deg;
@@ -349,7 +356,7 @@ h4 {
   border-radius: 55px;
   text-decoration: none;
   color: white;
-  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  background: linear-gradient(to bottom, #ff79da, #9356dc);
 }
 
 .logo-end {

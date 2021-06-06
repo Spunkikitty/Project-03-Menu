@@ -55,13 +55,16 @@ nav .fa-arrow-left {
   width: 90%;
   margin: 30px auto;
 }
-.menu-title .left_title {
+.menu-title .left-title {
+  width: 120%;
+}
+.menu-title .right_title {
   width: 90%;
 }
 
 .fa-heart {
   margin-top: 35px;
-  margin-left: 120px;
+  margin-left: 80px;
   font-weight: 100px;
 }
 
@@ -88,6 +91,7 @@ nav .fa-arrow-left {
   -moz-animation: fadeIn ease 3s;
   -o-animation: fadeIn ease 3s;
   -ms-animation: fadeIn ease 3s;
+  border: 1px solid black;
 }
 
 @keyframes fadeIn {
@@ -114,7 +118,7 @@ nav .fa-arrow-left {
   overflow: hidden;
 }
 .ingredient .ingredient_description {
-  width: 170%;
+  width: 300%;
   font-family: "Roboto";
 }
 .ingredient .ingredient_description p {

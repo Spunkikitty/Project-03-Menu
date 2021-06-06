@@ -64,15 +64,23 @@
         width:90%;
         margin:30px auto;
   
-          .left_title{
-          width:90%;
+          .left-title{
+          width:120%;
+          
+      }
+      .right_title{
+       
+        width:90%;
       }
     }
       
+
         .fa-heart {
           margin-top: 35px;
-          margin-left: 120px;
+          margin-left: 80px;
           font-weight: 100px;
+          
+
         }
       
        .right_title .fas {
@@ -82,11 +90,13 @@
           position: relative;
           top: -63px;
           left: 30px;
+          
         }
       
         .far {
           position: relative;
           left: 30px;
+          
           &:hover {
             visibility: hidden;
           }
@@ -99,6 +109,7 @@
           -moz-animation: fadeIn ease 3s;
           -o-animation: fadeIn ease 3s;
           -ms-animation: fadeIn ease 3s;
+          border:1px solid black;
         }
       
         @keyframes fadeIn {
@@ -127,7 +138,7 @@
               overflow:hidden;
             
               .ingredient_description{
-             width:170%;
+             width:300%;
              font-family: "Roboto";
              
              
