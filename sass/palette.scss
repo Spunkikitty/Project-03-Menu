@@ -196,6 +196,7 @@ h4 {
 
     .fa-check-circle {
       transform-origin: center;
+      
       background: #99e2d0;
       color: #fff;
     }
@@ -220,6 +221,7 @@ h4 {
 #option-7:hover i,
 #option-8:hover i,
 #option-9:hover i {
+  transition-duration: 1s;
   -moz-transform: rotate(360deg);
   -webkit-transform: rotate(-360deg);
   transform: rotate (-360deg);

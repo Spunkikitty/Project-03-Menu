@@ -142,14 +142,6 @@ nav .fa-arrow-left {
   background: #99e2d0;
   color: #fff;
 }
-@keyframes spin {
-  0% {
-    transform: rotate(1) 0deg;
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 #option-1:hover .ingredient-check-1 {
   -webkit-transform: translateX(0px);
@@ -168,9 +160,12 @@ nav .fa-arrow-left {
 #option-6:hover i,
 #option-7:hover i,
 #option-8:hover i,
-#option-9:hover i {
+#option-9:hover i,
+#option-10:hover i {
+  transition-duration: 1s;
+  -moz-transform: rotate(360deg);
   -webkit-transform: rotate(-360deg);
-  transform: rotate(-360deg);
+  transform: rotate -360deg;
 }
 
 #option-1:hover .ingredient_description {
@@ -270,6 +265,18 @@ nav .fa-arrow-left {
 }
 
 #option-9:hover .ingredient_description {
+  width: calc(100% - 100px);
+}
+
+#option-10:hover .ingredient-check-10 {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+  -webkit-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
+  right: -10px;
+}
+
+#option-10:hover .ingredient_description {
   width: calc(100% - 100px);
 }
 

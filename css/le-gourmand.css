@@ -166,8 +166,10 @@ nav .fa-arrow-left {
 #option-1:hover i, #option-2:hover i, #option-3:hover i, #option-3:hover i,
 #option-4:hover i, #option-5:hover i, #option-6:hover i, #option-7:hover i,
 #option-8:hover i, #option-9:hover i {
+  transition-duration: 1s;
+  -moz-transform: rotate(360deg);
   -webkit-transform: rotate(-360deg);
-  transform: rotate(-360deg);
+  transform: rotate -360deg;
 }
 
 #option-1:hover .ingredient_description {

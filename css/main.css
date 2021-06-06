@@ -49,13 +49,12 @@ nav {
 
 .paris-top .fas {
   position: relative;
-  top: 1px;
-  left: -36px;
+  top: -10px;
+  left: -45px;
 }
 
 article .fa-map-marker-alt {
-  display: block;
-  margin-right: 100px;
+  margin-right: 10px;
   color: #4c4c4c;
   visibility: visible;
   margin-top: -0.5em;
@@ -64,10 +63,11 @@ article .fa-map-marker-alt {
 .paree {
   font-family: "Roboto";
   margin-bottom: -20px;
-  margin-left: -20px;
+  margin-left: -48px;
   font-weight: bolder;
   color: #4c4c4c;
-  border: 1px solid red;
+  position: relative;
+  top: -10px;
 }
 
 .like-1 {
