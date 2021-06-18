@@ -1,0 +1,20 @@
+.container {
+  border: 2px solid red;
+  width: 300px;
+  height: 200px;
+}
+.container .btn {
+  background: #011c37;
+  color: #15DEA5;
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 1.85rem 3rem;
+  border-radius: 10rem;
+  transition: transform 0;
+  transform: scale(1);
+}
+.container .btn:hover {
+  transform: scale(1.15);
+}
+
+/*# sourceMappingURL=button.css.map */

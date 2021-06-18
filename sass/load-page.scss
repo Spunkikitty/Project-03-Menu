@@ -1,0 +1,237 @@
+
+*, *::after, *::before {
+    box-sizing: border-box;
+  }
+  
+
+body,html{
+    display:block;
+    width:100%;
+    height:100%;
+    background: #353535;
+   transition: transform 1s background-color 2s;
+    //animation: fadeounAnimation ease 3s;
+            //animation-iteration-count: 1;
+           // animation-fill-mode: forwards ;
+           // @keyframes transitionin
+}
+
+@keyframes transitionin {
+    from{opacity:0;
+    transform:translateY(-10px)}
+}
+
+
+
+
+.loader {
+    background: #000;
+    background: radial-gradient(#222, #000);
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+}
+
+.loader-inner {
+    bottom: 0;
+    height: 60px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+}
+
+.loader-line-wrap {
+    animation: 
+		spin 2000ms cubic-bezier(.175, .885, .32, 1.275) infinite
+	;
+    box-sizing: border-box;
+    height: 50px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    transform-origin: 50% 100%;
+    width: 100px;
+}
+.loader-line {
+    border: 4px solid transparent;
+    border-radius: 100%;
+    box-sizing: border-box;
+    height: 100px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+}
+.loader-line-wrap:nth-child(1) { animation-delay: -50ms; }
+.loader-line-wrap:nth-child(2) { animation-delay: -100ms; }
+.loader-line-wrap:nth-child(3) { animation-delay: -150ms; }
+.loader-line-wrap:nth-child(4) { animation-delay: -200ms; }
+.loader-line-wrap:nth-child(5) { animation-delay: -250ms; }
+
+.loader-line-wrap:nth-child(1) .loader-line {
+    border-color: hsl(0, 80%, 60%);
+    height: 90px;
+    width: 90px;
+    top: 7px;
+}
+.loader-line-wrap:nth-child(2) .loader-line {
+    border-color: hsl(60, 80%, 60%);
+    height: 76px;
+    width: 76px;
+    top: 14px;
+}
+.loader-line-wrap:nth-child(3) .loader-line {
+    border-color: hsl(120, 80%, 60%);
+    height: 62px;
+    width: 62px;
+    top: 21px;
+}
+.loader-line-wrap:nth-child(4) .loader-line {
+    border-color: hsl(180, 80%, 60%);
+    height: 48px;
+    width: 48px;
+    top: 28px;
+}
+.loader-line-wrap:nth-child(5) .loader-line {
+    border-color: hsl(240, 80%, 60%);
+    height: 34px;
+    width: 34px;
+    top: 35px;
+}
+
+@keyframes spin {
+    0%, 15% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+page-content {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+
+
+.preloader-wrapper {
+    justify-content: center;
+    align-items: center;
+    background: rgb(23, 22, 22);
+    display: flex;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    opacity: 1;
+    transition:transform 3s;
+}
+
+
+
+.inner-loader{ 
+    background-image: url(https://images.unsplash.com/photo-1575722290270-626b0208df99?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHRleHR1cmV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60);
+    width:300px;
+    height:300px; 
+    border:.2rem solid black; 
+    border-radius:20%;
+    animation:rotate 3s ease-in-out;
+
+     .inner2-loader{ 
+        margin-top:30px;
+        margin-left:50px;
+        width:180px;
+        height:230px; 
+        background-color:blanchedalmond;
+        border:1rem solid blanchedalmond; 
+        border-radius:50%;
+        border-top-color:bisque ;
+        border-bottom-color:bisque; 
+        animation:rotate 2s  ease-out;
+        
+        
+}
+}
+
+.circle{
+    height:.2em;
+    width:.1em;
+    //color: brown ;
+
+}
+
+ @keyframes rotate { 
+
+    0%{
+        transform: scale(1) rotate(360deg);
+
+    } 
+
+    25%{
+       transform:scale(.5) rotate(-360deg)
+    }
+
+    50%{
+        transform:scale(.4) rotate(180deg);
+        flood-opacity: initial(.4);
+    }
+    
+    100%{
+        transition: 3s;
+       transform:scale(1) rotate(360deg);
+        opacity:0;
+
+
+
+    }
+}
+
+@keyframes fadeoutAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        
+
+
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+   
+    .inner-loader{ 
+        width:150px;
+        height:150px;
+        .inner2-loader{ 
+            width:65px;
+            height:80px; 
+            margin-left: 30px;
+            margin-top:19px;
+            border:1rem solid bisque; 
+            border-radius:50%;
+            border-top-color:bisque ;
+            border-bottom-color:bisque; 
+            animation:rotate 3s  ease-out;
+    
+    
+        }
+
+    }
+
+
+}
