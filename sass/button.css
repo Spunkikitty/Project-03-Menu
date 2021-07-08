@@ -16,14 +16,11 @@
   transition: transform 0;
   transition: transform 0, -webkit-transform 0;
   -webkit-transform: scale(1);
-  transform: scale(1);
+          transform: scale(1);
 }
 
 .container .btn:hover {
   -webkit-transform: scale(1.15);
-  transform: scale(1.15);
+          transform: scale(1.15);
 }
-
-/*# sourceMappingURL=button.css.map */
-
 /*# sourceMappingURL=button.css.map */

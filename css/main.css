@@ -13,18 +13,22 @@ a {
 }
 
 .new-tag {
-  display: flex;
   position: relative;
+  text-align: center;
   z-index: 9000;
   margin-bottom: -40px;
-  left: 290px;
-  justify-content: center;
-  align-items: center;
+  left: 80%;
   width: 80px;
-  height: 30px;
+  height: 25px;
   background-color: #99e2d0;
   font-family: "Roboto";
   color: #278870;
+  font-weight: 900;
+  padding-top: 5px;
+}
+
+span {
+  line-height: 5px;
 }
 
 nav {
@@ -40,30 +44,37 @@ nav {
 }
 
 .paris-container {
-  width: 100%;
   background-color: #eaeaea;
-  padding-left: 38%;
   padding-top: 30px;
   padding-bottom: 10px;
+}
+
+.container-1 {
+  background-color: #f6f6f6;
+  text-align: center;
+  height: 400px;
 }
 
 .paris-top .fas {
   position: relative;
   top: -10px;
-  left: -45px;
 }
 
-article .fa-map-marker-alt {
-  margin-right: 10px;
+.paris-top {
+  text-align: center;
+}
+
+.icon .fa-map-marker-alt {
   color: #4c4c4c;
   visibility: visible;
   margin-top: -0.5em;
+  left: -45px;
 }
 
 .paree {
   font-family: "Roboto";
   margin-bottom: -20px;
-  margin-left: -48px;
+  margin-left: -39px;
   font-weight: bolder;
   color: #4c4c4c;
   position: relative;
@@ -77,6 +88,10 @@ article .fa-map-marker-alt {
   font-weight: 900;
   width: 100%;
   text-align: center;
+}
+
+.choice-1 {
+  padding-left: 1.5em;
 }
 
 .cover-1 {
@@ -97,11 +112,12 @@ article .fa-map-marker-alt {
 
 .btn-1 {
   color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   background: linear-gradient(to bottom, #ff79da, #9356dc);
   border-radius: 45px;
   border: 2px solid #f2f2f2;
   padding: 1.5em 3.5em 1.5em 4.5em;
-  margin: 10px 5% 12% 18%;
+  margin: 10px 5% 12%;
   min-width: 100px;
 }
 
@@ -109,12 +125,13 @@ article .fa-map-marker-alt {
   text-decoration: none !important;
   font-family: "Roboto";
 }
+
 .our-1 a {
   color: #fff;
 }
 
 .how-it-works {
-  margin-top: 32%;
+  margin-top: 10%;
   font-family: "Roboto";
   padding-left: 15px;
   font-weight: bolder;
@@ -124,6 +141,7 @@ article .fa-map-marker-alt {
   margin-top: 20px;
   background-color: #f6f6f6;
   border-radius: 25px;
+  -webkit-box-shadow: 7px 6px 6px #ccc;
   box-shadow: 7px 6px 6px #ccc;
   padding: 1em 1em 1em 1em;
   margin-left: 1em;
@@ -139,8 +157,8 @@ article .fa-map-marker-alt {
   border: 1px solid #9356dc;
   background-color: #9356dc;
   border-radius: 50%;
-  padding: 5px;
-  width: 15px;
+  padding: 13px;
+  width: 5px;
   color: white;
   margin-left: -22px;
 }
@@ -163,6 +181,7 @@ article .fa-map-marker-alt {
   margin-top: 20px;
   background-color: #f6f6f6;
   border-radius: 25px;
+  -webkit-box-shadow: 7px 6px 6px #ccc;
   box-shadow: 7px 6px 6px #ccc;
   padding: 1em 1em 1em 1em;
   margin-left: 1em;
@@ -176,6 +195,7 @@ article .fa-map-marker-alt {
   margin-top: 20px;
   background-color: #f6f6f6;
   border-radius: 25px;
+  -webkit-box-shadow: 7px 6px 6px #ccc;
   box-shadow: 7px 6px 6px #ccc;
   padding: 1em 1em 1em 1em;
   margin-left: 1em;
@@ -200,19 +220,6 @@ article .fa-map-marker-alt {
   font-family: "Roboto";
 }
 
-.new-1 {
-  border: 1px solid #69e8a9;
-  background-color: #69e8a9;
-  width: 85px;
-  height: 30px;
-}
-
-.green-2 {
-  font-family: "Roboto";
-  color: #005c32;
-  font-weight: bold;
-}
-
 .title-1 {
   margin-bottom: 30px;
 }
@@ -233,13 +240,29 @@ article .fa-map-marker-alt {
 }
 
 .full-1 {
+  -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
   height: 180px;
   border-radius: 10px 10px 0 0;
+  -ms-flex-line-pack: center;
   align-content: center;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+}
+
+.full-2 {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 180px;
+  border-radius: 10px 10px 0 0;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 .fa-heart {
@@ -252,27 +275,37 @@ article .fa-map-marker-alt {
   visibility: hidden;
   color: #9356dc;
   position: relative;
-  top: -41px;
-  left: 30px;
+  top: -1px;
+  left: -45px;
 }
 
 .far {
   position: relative;
   left: 30px;
 }
+
 .far:hover {
   visibility: hidden;
 }
 
 .title-right:hover .fas {
   visibility: visible;
-  animation: fadeIn ease 3s;
   -webkit-animation: fadeIn ease 3s;
+  animation: fadeIn ease 3s;
+  /* -webkit-animation: fadeIn ease 3s; */
   -moz-animation: fadeIn ease 3s;
   -o-animation: fadeIn ease 3s;
   -ms-animation: fadeIn ease 3s;
 }
 
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -282,27 +315,42 @@ article .fa-map-marker-alt {
   }
 }
 .food_card-2 {
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
 .food-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-shadow: 7px 6px 6px #ccc;
   box-shadow: 7px 6px 6px #ccc;
   background-color: white;
   width: 100%;
   height: 55px;
   border-radius: 0 0 15px 15px;
 }
+
 .food-description .location {
   margin-top: 5px;
 }
+
 .food-description .title-left {
   width: 70%;
   padding-left: 10px;
 }
+
 .food-description .title-left .title-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row;
   flex-flow: row;
   width: 28%;
   text-align: center;
@@ -321,6 +369,7 @@ article .fa-map-marker-alt {
 .btn-5 {
   display: block;
   color: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   background: linear-gradient(to bottom, #ff79da, #9356dc);
   margin: 15px auto;
   border-radius: 25px;
@@ -340,6 +389,7 @@ footer {
   padding: 10px;
   color: #fff;
 }
+
 footer ul {
   list-style: none;
   text-decoration: none;
@@ -383,6 +433,7 @@ footer ul {
   animation-fill-mode: forwards;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  background-color: whitesmoke;
 }
 
 @-webkit-keyframes fade {
@@ -407,11 +458,12 @@ footer ul {
     opacity: 0;
   }
 }
-@supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+ @supports  ((-webkit-backdrop-filter: none) or (backdrop-filter: blur)){
   .spinner_container {
     background-color: rgba(255, 255, 255, 0.9);
   }
 }
+
 .spinner {
   --size: 200px;
   width: var(--size);
@@ -515,5 +567,95 @@ footer ul {
     transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
   }
 }
+@media screen and (min-width: 375px) and (max-width: 1024px) {
+  a {
+    text-decoration: none;
+  }
+
+  .new-tag {
+    margin-bottom: -40px;
+    left: 70%;
+    width: 80px;
+    height: 25px;
+    text-align: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    padding-top: 5px;
+  }
+
+  .paris-container {
+    background-color: #eaeaea;
+    padding-top: 30px;
+  }
+
+  .container-1 {
+    background-color: #f6f6f6;
+    height: 400px;
+  }
+
+  .paris-top .fas {
+    position: relative;
+    top: -10px;
+    left: -35px;
+  }
+
+  .icon .fa-map-marker-alt {
+    margin-right: 10px;
+    color: #4c4c4c;
+    visibility: visible;
+    margin-top: -0.5em;
+  }
+
+  .paree {
+    font-family: "Roboto";
+    margin-bottom: -20px;
+    margin-left: -39px;
+    font-weight: bolder;
+    color: #4c4c4c;
+    position: relative;
+    top: -10px;
+  }
+
+  .like-1 {
+    text-align: center;
+  }
+
+  .cover-1 {
+    text-align: center;
+  }
+
+  .btn-1 {
+    color: #fff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+    background: linear-gradient(to bottom, #ff79da, #9356dc);
+    border-radius: 45px;
+    border: 2px solid #f2f2f2;
+    padding: 1.5em 3.5em 1.5em 4.5em;
+    margin: 10px 5% 12%;
+    min-width: 100px;
+    -ms-grid-column-align: center;
+    justify-self: center;
+  }
+
+  .our-1 {
+    text-decoration: none !important;
+    font-family: "Roboto";
+  }
+
+  .our-1 a {
+    color: #fff;
+  }
+
+  .how-it-works {
+    margin-top: 10%;
+    padding-left: 15px;
+  }
+
+  .title-right .fas {
+    top: -45px;
+    left: 30px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
 
 /*# sourceMappingURL=main.css.map */

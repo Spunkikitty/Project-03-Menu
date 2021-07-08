@@ -3,6 +3,14 @@
   padding: 0px;
 }
 
+@keyframes spin {
+  0%, 15% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 nav {
   display: flex;
   flex-direction: row;
@@ -19,21 +27,22 @@ nav .fa-arrow-left {
   margin-top: 10px;
 }
 
-.underline {
-  border-bottom: 2px solid #99e2d0;
-}
-
 .css-selector {
   font-family: "Shrikhand", auto;
   font-family: "Roboto", auto;
 }
 
 .primary-img {
-  background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   display: block;
   width: 100%;
   height: 250px;
   background-size: cover;
+}
+
+.title {
+  font-family: "Shrikhand";
+  margin-top: 30px;
 }
 
 .menu-content {
@@ -65,26 +74,43 @@ nav .fa-arrow-left {
 
 .fa-heart {
   margin-top: 30px;
-  margin-left: 200px;
-  font-weight: 100px;
+  margin-left: 80vh;
+  font-weight: 100;
 }
 
 .right_title .fas {
   visibility: hidden;
   color: #9356dc;
   position: relative;
-  top: -58px;
-  left: 30px;
+  top: -63px;
+  left: 80vh;
 }
 
 .far {
   position: relative;
-  left: 30px;
+  left: 80vh;
 }
 .far:hover {
   visibility: hidden;
 }
 
+.title-right:hover .fas {
+  visibility: visible;
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .right_title:hover .fas {
   visibility: visible;
   animation: fadeIn ease 3s;
@@ -102,6 +128,14 @@ nav .fa-arrow-left {
     opacity: 1;
   }
 }
+h4 {
+  padding-top: 15px;
+}
+
+#spice {
+  padding-top: 2px;
+}
+
 .ingredient {
   line-height: 22px;
   height: 60px;
@@ -118,14 +152,14 @@ nav .fa-arrow-left {
   overflow: hidden;
 }
 .ingredient .ingredient_description {
-  width: 330%;
+  width: 300%;
   font-family: "Roboto";
 }
 .ingredient .ingredient_description p {
   margin-bottom: 5px;
 }
 .ingredient .ingredient_price {
-  padding-top: 25px;
+  padding-top: 37px;
   font-weight: bold;
   margin-left: 25px;
 }
@@ -142,17 +176,9 @@ nav .fa-arrow-left {
   background: #99e2d0;
 }
 .ingredient .ingredient-check .fa-check-circle {
+  transform-origin: center;
   background: #99e2d0;
   color: #fff;
-  animation: 4s linear;
-}
-@keyframes spin {
-  0% {
-    transform: rotate(1) 0deg;
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 #option-1:hover .ingredient-check-1 {
@@ -163,9 +189,18 @@ nav .fa-arrow-left {
   right: -10px;
 }
 
-#option-1:hover i, #option-2:hover i, #option-3:hover i, #option-3:hover i,
-#option-4:hover i, #option-5:hover i, #option-6:hover i, #option-7:hover i,
-#option-8:hover i, #option-9:hover i {
+#option-1:hover i,
+#option-2:hover i,
+#option-3:hover i,
+#option-3:hover i,
+#option-4:hover i,
+#option-5:hover i,
+#option-6:hover i,
+#option-7:hover i,
+#option-8:hover i,
+#option-9:hover i {
+  transition-duration: 1s;
+  -moz-transform: rotate(360deg);
   -webkit-transform: rotate(-360deg);
   transform: rotate(-360deg);
 }
@@ -310,12 +345,7 @@ nav .fa-arrow-left {
   border-radius: 55px;
   text-decoration: none;
   color: white;
-  background: linear-gradient(to bottom, #FF79DA, #9356DC);
-}
-
-.title {
-  font-family: "Shrikhand";
-  margin-top: 30px;
+  background: linear-gradient(to bottom, #ff79da, #9356dc);
 }
 
 .logo-end {
@@ -330,7 +360,7 @@ footer {
 }
 footer ul {
   list-style: none;
-  text-decoration-style: none;
+  text-decoration: none;
   margin: 10px 0 0 3px;
   font-family: "Roboto";
   line-height: 30px;
@@ -339,6 +369,34 @@ footer ul {
 .link {
   text-decoration: none !important;
   color: inherit;
+}
+
+@media screen and (min-width: 375px) and (max-width: 1024px) {
+  .fa-heart {
+    margin-top: 30px;
+    margin-left: 13vh;
+    font-weight: 100;
+  }
+
+  .right_title .fas {
+    visibility: hidden;
+    color: #9356dc;
+    position: relative;
+    top: -63px;
+    left: 13vh;
+  }
+
+  .far {
+    position: relative;
+    left: 13vh;
+  }
+  .far:hover {
+    visibility: hidden;
+  }
+
+  #spice {
+    padding-bottom: 3px;
+  }
 }
 
 /*# sourceMappingURL=bastille.css.map */

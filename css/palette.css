@@ -82,7 +82,7 @@ nav .fa-arrow-left {
   visibility: hidden;
   color: #9356dc;
   position: relative;
-  top: -41px;
+  top: -63px;
   left: 30px;
 }
 
@@ -111,14 +111,6 @@ nav .fa-arrow-left {
     opacity: 1;
   }
 }
-.right_title .fas {
-  visibility: hidden;
-  color: #9356dc;
-  position: relative;
-  top: -58px;
-  left: 30px;
-}
-
 .far {
   position: relative;
   left: 30px;
@@ -145,6 +137,10 @@ nav .fa-arrow-left {
   }
 }
 h4 {
+  padding-top: 15px;
+}
+
+#spice {
   padding-top: 15px;
 }
 
@@ -214,7 +210,7 @@ h4 {
   transition-duration: 1s;
   -moz-transform: rotate(360deg);
   -webkit-transform: rotate(-360deg);
-  transform: rotate -360deg;
+  transform: rotate(-360deg);
 }
 
 #option-1:hover .ingredient_description {
@@ -366,14 +362,13 @@ h4 {
 
 footer {
   background-color: #353535;
-  width: 100%;
   min-height: 100px;
   padding: 10px;
   color: #fff;
 }
 footer ul {
   list-style: none;
-  text-decoration-style: none;
+  text-decoration: none;
   margin: 10px 0 0 3px;
   font-family: "Roboto";
   line-height: 30px;
@@ -382,6 +377,17 @@ footer ul {
 .link {
   text-decoration: none !important;
   color: inherit;
+}
+
+@media screen and (min-width: 375px) and (max-width: 1024px) {
+  .right_title .fas {
+    top: -61px;
+    left: 30px;
+  }
+
+  #spice {
+    padding-top: 5px;
+  }
 }
 
 /*# sourceMappingURL=palette.css.map */

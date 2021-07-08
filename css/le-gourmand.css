@@ -4,7 +4,12 @@
 }
 
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   padding: 10px;
 }
@@ -40,6 +45,7 @@ nav .fa-arrow-left {
   border-top-right-radius: 30px;
   font-family: "Roboto";
 }
+
 .menu-content h3 {
   margin: 25px 20px 20px 20px;
   line-height: 3px;
@@ -50,14 +56,21 @@ nav .fa-arrow-left {
 }
 
 .menu-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   width: 90%;
   margin: 30px auto;
 }
+
 .menu-title .left-title {
   width: 120%;
 }
+
 .menu-title .right_title {
   width: 90%;
 }
@@ -65,21 +78,23 @@ nav .fa-arrow-left {
 .fa-heart {
   margin-top: 35px;
   margin-left: 80px;
-  font-weight: 100px;
+  font-weight: 100;
 }
 
 .right_title .fas {
   visibility: hidden;
   color: #9356dc;
   position: relative;
-  top: -63px;
-  left: 30px;
+  top: -7px;
+  left: 50.8vh;
 }
 
 .far {
   position: relative;
-  left: 30px;
+  left: 65.5vh;
+  top: -1vh;
 }
+
 .far:hover {
   visibility: hidden;
 }
@@ -91,9 +106,16 @@ nav .fa-arrow-left {
   -moz-animation: fadeIn ease 3s;
   -o-animation: fadeIn ease 3s;
   -ms-animation: fadeIn ease 3s;
-  border: 1px solid black;
 }
 
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -107,28 +129,39 @@ nav .fa-arrow-left {
   height: 60px;
   width: 90%;
   margin: 18px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   border-radius: 10px;
   background-color: #fff;
+  -webkit-box-shadow: 0 10px 10px 0 rgba(12, 12, 12, 0.1);
   box-shadow: 0 10px 10px 0 rgba(12, 12, 12, 0.1);
   -webkit-animation: option-loading 3s forwards;
   animation: option-loading 3s forwards;
   overflow: hidden;
 }
+
 .ingredient .ingredient_description {
+  margin-top: 15px;
   width: 300%;
   font-family: "Roboto";
 }
+
 .ingredient .ingredient_description p {
   margin-bottom: 5px;
 }
+
 .ingredient .ingredient_price {
   padding-top: 37px;
   font-weight: bold;
   margin-left: 25px;
 }
+
 .ingredient .ingredient-check {
   width: 78px;
   height: 47px;
@@ -141,20 +174,34 @@ nav .fa-arrow-left {
   padding-top: 35px;
   background: #99e2d0;
 }
+
 .ingredient .ingredient-check .fa-check-circle {
   background: #99e2d0;
   color: #fff;
+  -webkit-animation: 4s linear;
   animation: 4s linear;
 }
-@keyframes spin {
+
+@-webkit-keyframes spin {
   0% {
+    -webkit-transform: rotate(1) 0deg;
     transform: rotate(1) 0deg;
   }
   100% {
+    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
-
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
 #option-1:hover .ingredient-check-1 {
   -webkit-transform: translateX(0px);
   transform: translateX(0px);
@@ -166,10 +213,10 @@ nav .fa-arrow-left {
 #option-1:hover i, #option-2:hover i, #option-3:hover i, #option-3:hover i,
 #option-4:hover i, #option-5:hover i, #option-6:hover i, #option-7:hover i,
 #option-8:hover i, #option-9:hover i {
+  -webkit-transition-duration: 1s;
   transition-duration: 1s;
-  -moz-transform: rotate(360deg);
   -webkit-transform: rotate(-360deg);
-  transform: rotate -360deg;
+  transform: rotate(-360deg);
 }
 
 #option-1:hover .ingredient_description {
@@ -312,6 +359,7 @@ nav .fa-arrow-left {
   border-radius: 55px;
   text-decoration: none;
   color: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
 }
 
@@ -330,9 +378,11 @@ footer {
   padding: 10px;
   color: #fff;
 }
+
 footer ul {
   list-style: none;
-  text-decoration-style: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
   margin: 10px 0 0 3px;
   font-family: "Roboto";
   line-height: 30px;
@@ -342,5 +392,21 @@ footer ul {
   text-decoration: none !important;
   color: inherit;
 }
+
+@media screen and (min-width: 375px) and (max-width: 1024px) {
+  .far {
+    left: 6.5vh;
+    top: -1vh;
+  }
+
+  .right_title .fas {
+    visibility: hidden;
+    color: #9356dc;
+    position: relative;
+    top: -73px;
+    left: 36px;
+  }
+}
+/*# sourceMappingURL=le-gourmand.css.map */
 
 /*# sourceMappingURL=le-gourmand.css.map */

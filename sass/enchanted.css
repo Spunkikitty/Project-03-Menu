@@ -3,21 +3,14 @@
   padding: 0px;
 }
 
-$empty:none;
-
-@keyframes spin {
-  0%,
-  15% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   padding: 10px;
 }
 
@@ -25,6 +18,7 @@ nav {
   width: 40%;
   margin: 5px auto;
 }
+
 nav .fa-arrow-left {
   color: #5a5f6b;
   margin-top: 10px;
@@ -36,16 +30,11 @@ nav .fa-arrow-left {
 }
 
 .primary-img {
-  background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-image: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash1.jpg");
   display: block;
   width: 100%;
   height: 250px;
   background-size: cover;
-}
-
-.title {
-  font-family: "Shrikhand";
-  margin-top: 30px;
 }
 
 .menu-content {
@@ -55,10 +44,11 @@ nav .fa-arrow-left {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   font-family: "Roboto";
-  h3 {
-    margin: 25px 20px 20px 20px;
-    line-height: 3px;
-  }
+}
+
+.menu-content h3 {
+  margin: 25px 20px 20px 20px;
+  line-height: 3px;
 }
 
 .underline {
@@ -66,19 +56,24 @@ nav .fa-arrow-left {
 }
 
 .menu-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 90%;
   margin: 30px auto;
+}
 
-  .left_title {
-    width: 90%;
-  }
+.menu-title .left_title {
+  width: 90%;
 }
 
 .fa-heart {
   margin-top: 30px;
-  margin-left: 80vh;
+  margin-left: 20px;
   font-weight: 100;
 }
 
@@ -86,43 +81,18 @@ nav .fa-arrow-left {
   visibility: hidden;
   color: #9356dc;
   position: relative;
-  top: -63px;
-  left: 80vh;
+  top: -1px;
+  left: -3vh;
 }
 
 .far {
   position: relative;
-  left: 80vh;
-  &:hover {
-    visibility: hidden;
-  }
+  left: 4vh;
 }
 
-
-
-.title-right:hover .fas {
-  visibility: visible;
-  animation: fadeIn ease 3s;
-  -webkit-animation: fadeIn ease 3s;
-  -moz-animation: fadeIn ease 3s;
-  -o-animation: fadeIn ease 3s;
-  -ms-animation: fadeIn ease 3s;
+.far:hover {
+  visibility: hidden;
 }
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  
-  100% {
-    opacity: 1;
-  }
-}
-
-
-
-
-
 
 .right_title:hover .fas {
   visibility: visible;
@@ -133,6 +103,15 @@ nav .fa-arrow-left {
   -ms-animation: fadeIn ease 3s;
 }
 
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -142,61 +121,122 @@ nav .fa-arrow-left {
   }
 }
 
-h4 {
-  padding-top: 15px;
-}
 
-#spice {
-  padding-top:2px;
-}
-.ingredient {
-  line-height: 22px;
+
+.ingredient-des {
+  line-height: -22px;
   height: 60px;
   width: 90%;
   margin: 18px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 10px;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   border-radius: 10px;
   background-color: #fff;
-  box-shadow: 0 10px 10px 0 rgba(12, 12, 12, 0.1);
+  -webkit-box-shadow: 0 10px 10px 0 rgba(12, 12, 12, 0.1);
+          box-shadow: 0 10px 10px 0 rgba(12, 12, 12, 0.1);
   -webkit-animation: option-loading 3s forwards;
   animation: option-loading 3s forwards;
   overflow: hidden;
+}
 
-  .ingredient_description {
-    width: 300%;
-    font-family: "Roboto";
 
-    p {
-      margin-bottom: 5px;
-    }
-  }
+.ingredient {
+  line-height: 10px;
+  height: 60px;
+  width: 90%;
+  margin: 18px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-radius: 10px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 10px 10px 0 rgba(12, 12, 12, 0.1);
+          box-shadow: 0 10px 10px 0 rgba(12, 12, 12, 0.1);
+  -webkit-animation: option-loading 3s forwards;
+  animation: option-loading 3s forwards;
+  overflow: hidden;
+}
 
-  .ingredient_price {
-    padding-top: 37px;
-    font-weight: bold;
-    margin-left: 25px;
-  }
-  .ingredient-check {
-    width: 78px;
-    height: 47px;
-    text-align: center;
-    margin-top: -11px;
-    position: relative;
-    right: -90px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding-top: 35px;
-    background: #99e2d0;
+.ingredient .ingredient_description {
+  margin-top: 17px;
+  width: 350%;
+  font-family: "Roboto";
+}
 
-    .fa-check-circle {
-      transform-origin: center;
-      
-      background: #99e2d0;
-      color: #fff;
-    }
-  }
+.ingredient-des .ingredient_description {
+  width: 350%;
+  font-family: "Roboto";
+}
+
+.ingredient .ingredient_description p {
+  margin-top: 13px;
+}
+
+.ingredient-des .ingredient_description p {
+  margin-top: 1px;
+}
+
+.ingredient .ingredient_price {
+  padding-top: 42px;
+  font-weight: bold;
+  margin-left: 35px;
+}
+
+.ingredient-des .ingredient_price1 {
+  padding-top:40px;
+  font-weight: bold;
+  margin-left: 35px;
+}
+
+.ingredient .ingredient-check {
+  width: 78px;
+  height: 47px;
+  text-align: center;
+  margin-top: -11px;
+  position: relative;
+  right: -90px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-top: 35px;
+  background: #99e2d0;
+}
+
+.ingredient-des .ingredient-check {
+  width: 78px;
+  height: 47px;
+  text-align: center;
+  margin-top: -11px;
+  position: relative;
+  right: -90px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-top: 35px;
+  background: #99e2d0;
+}
+
+.ingredient .ingredient-check .fa-check-circle {
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  background: #99e2d0;
+  color: #fff;
+}
+
+.ingredient-des  .ingredient-check .fa-check-circle {
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  background: #99e2d0;
+  color: #fff;
 }
 
 #option-1:hover .ingredient-check-1 {
@@ -216,9 +256,10 @@ h4 {
 #option-6:hover i,
 #option-7:hover i,
 #option-8:hover i,
-#option-9:hover i {
-  transition-duration: 1s;
-  -moz-transform: rotate(360deg);
+#option-9:hover i,
+#option-10:hover i {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
   -webkit-transform: rotate(-360deg);
   transform: rotate(-360deg);
 }
@@ -323,6 +364,19 @@ h4 {
   width: calc(100% - 100px);
 }
 
+#option-10:hover .ingredient-check-10 {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+  -webkit-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
+  right: -10px;
+}
+
+#option-10:hover .ingredient_description {
+  width: calc(100% - 100px);
+}
+
+
 @-webkit-keyframes option-loading {
   0% {
     color: white;
@@ -363,9 +417,16 @@ h4 {
   padding-top: 20px;
   display: block;
   border-radius: 55px;
-  text-decoration: $empty;
+  text-decoration: none;
   color: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   background: linear-gradient(to bottom, #ff79da, #9356dc);
+}
+
+.title {
+  font-family: "Shrikhand";
+  margin-top: 30px;
+  margin-left: 5px;
 }
 
 .logo-end {
@@ -374,51 +435,36 @@ h4 {
 
 footer {
   background-color: #353535;
-  
   min-height: 100px;
   padding: 10px;
   color: #fff;
-  ul {
-    list-style: $empty;
-    text-decoration: $empty;
-    margin: 10px 0 0 3px;
-    font-family: "Roboto";
-    line-height: 30px;
-  }
 }
+
+footer ul {
+  list-style: none;
+  -webkit-text-decoration: none;
+          text-decoration: none;
+  margin: 10px 0 0 3px;
+  font-family: "Roboto";
+  line-height: 30px;
+}
+
 .link {
-  text-decoration: $empty !important;
+  text-decoration: none !important;
   color: inherit;
 }
 
-@media screen and (min-width: 375px)  and (max-width:1024px){
- 
-  .fa-heart {
-    margin-top: 30px;
-    margin-left: 13vh;
-    font-weight: 100;
-  }
-  
+@media screen and (min-width: 375px) and (max-width: 1024px) {
   .right_title .fas {
-    visibility: hidden;
-    color: #9356dc;
-    position: relative;
     top: -63px;
-    left: 13vh;
+    left: 33px;
   }
-  
   .far {
     position: relative;
-    left: 13vh;
-    &:hover {
-      visibility: hidden;
-    }
+    left: 4vh;
   }
-  
-
-#spice {
-  padding-top:-3px;
+  .title {
+    margin-left: -15px;
+  }
 }
-}
-
-
+/*# sourceMappingURL=enchanted.css.map */
